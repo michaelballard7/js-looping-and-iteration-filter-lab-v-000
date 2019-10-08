@@ -7,8 +7,8 @@ function findMatching(collection, string){
 
 function fuzzyMatch(collection, string){
     return collection.filter((item)=>{
-        if(item.splice(string.length,0) === string){
-            return 
+        if(item.splice(string.length,0)) === string){
+            return item
         }
     })
 }
